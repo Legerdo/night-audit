@@ -1,0 +1,33 @@
+{
+  "id": "ceremony_gaze",
+  "align": {
+    "anomaly_size": [
+      1448,
+      1086
+    ],
+    "normal_size": [
+      1448,
+      1086
+    ],
+    "aspect_delta": 0.0,
+    "ecc_shift_px": [
+      -0.05,
+      -0.23
+    ],
+    "ecc_scale": [
+      1.0,
+      0.9999
+    ]
+  },
+  "changed_total_frac": 0.021,
+  "changed_inside_roi_frac": 0.0404,
+  "changed_outside_roi_frac": 0.0,
+  "largest_outside_component_frac": 0.0,
+  "outside_components": [],
+  "thresholds": {
+    "max_outside": 0.05,
+    "max_outside_component": 0.02,
+    "min_inside": 0.01
+  },
+  "raw_edit_pass": true
+}

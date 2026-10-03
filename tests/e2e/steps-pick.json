@@ -1,0 +1,8 @@
+{
+  "size": "1600x900",
+  "steps": [
+    { "eval": "window.__game.startNew('PROBE1')", "wait": 800 },
+    { "eval": "__na13f.skip(); __na13f.pos(-1.2, 0, 0.6, -1.9)", "wait": 900 },
+    { "eval": "(() => { const g = __game; const THREE = g.camera.constructor; const out = []; for (const [px,py] of [[760,820],[700,700],[650,560],[1450,600]]) { const rc = new (Object.getPrototypeOf(g.raycaster).constructor)(); rc.setFromCamera({x: px/1600*2-1, y: -(py/900*2-1)}, g.camera); const hits = rc.intersectObjects(g.world.scene.children, true).filter(h => h.object.visible && h.object.material && h.object.material.visible !== false); const h = hits[0]; if (!h) { out.push([px,py,'none']); continue; } const o = h.object; out.push([px, py, h.distance.toFixed(2), o.type, o.name, o.parent && o.parent.name, o.geometry.type, o.geometry.attributes.position.count, o.material.color && o.material.color.getHexString(), o.material.map ? 'map' : '', h.point.toArray().map(v=>v.toFixed(2)).join(',')]); } return out; })()" }
+  ]
+}

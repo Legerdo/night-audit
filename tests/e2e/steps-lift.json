@@ -1,0 +1,12 @@
+{
+  "size": "1280x720",
+  "out": "tests/e2e/out/lift",
+  "steps": [
+    { "eval": "window.__game.screens.close(); window.__game.startNew('LIFT'); window.__game.hud.show(false); 1", "wait": 600 },
+    { "eval": "(() => { const g = window.__game; g.elevator.place(3.45); g.player.teleport(0.9, 2*3.2, -1.6, 0.25, 0.05); return 1; })()", "wait": 700, "shot": "hall_car_passing.png" },
+    { "eval": "(() => { const g = window.__game; g.elevator.place(3); g.elevator.call(3, 'hall'); g.player.teleport(0.6, 2*3.2, -2.3, 0.3, 0.1); return 1; })()", "wait": 2200, "shot": "hall_doors_open.png" },
+    { "eval": "(() => { const g = window.__game; g.player.teleport(0.2, 2*3.2, -5.2, Math.PI, 0); return 1; })()", "wait": 700, "shot": "car_looking_out.png" },
+    { "eval": "(() => { const g = window.__game; g.elevator.place(3); g.player.teleport(0.9, 2*3.2, -1.6, 0.25, 0.05); return 1; })()", "wait": 3000 },
+    { "eval": "(() => { const g = window.__game; g.elevator.place(3.5); return 1; })()", "wait": 500, "shot": "hall_car_between.png" }
+  ]
+}

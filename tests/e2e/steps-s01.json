@@ -1,0 +1,11 @@
+{
+  "size": "1600x900",
+  "steps": [
+    { "eval": "window.__game.startNew('PROBE1')", "wait": 800 },
+    { "eval": "__na13f.skip(); __na13f.info()", "wait": 300 },
+    { "eval": "__na13f.pos(-1.2, 0, 0.6, -1.9)", "wait": 900, "shot": "s01_lobby.png" },
+    { "eval": "__na13f.openTablet('inc')", "wait": 600, "shot": "s01_tablet_inc.png" },
+    { "eval": "__game.tablet.tab='ref'; __game.tablet.refresh()", "wait": 900, "shot": "s01_tablet_ref.png" },
+    { "eval": "__game.close(); __na13f.pos(3.0, 0, -0.5, 3.3); 1", "wait": 700, "shot": "s01_board.png" }
+  ]
+}

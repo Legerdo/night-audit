@@ -1,0 +1,575 @@
+{
+  "generated_by": "tools/imageqa/export_assets.py",
+  "assets": [
+    {
+      "key": "gallery_family_normal",
+      "runtime_path": "public/assets/images/normal/family_photo.jpg",
+      "role": "normal",
+      "source": "art/raw/family_photo/normal_v1.png",
+      "prompt_file": "art/prompts/family_photo_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 190048,
+      "sha256_16": "7c0b99226c166c43",
+      "approved": true
+    },
+    {
+      "key": "gallery_family_anomaly",
+      "runtime_path": "public/assets/images/anomaly/family_photo_extra_person.jpg",
+      "role": "anomaly",
+      "source": "art/qa/family_photo/anomaly_composited.png",
+      "prompt_file": "art/prompts/family_photo_anomaly_edit.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 194078,
+      "sha256_16": "8a5aa198020f24b8",
+      "approved": true,
+      "pair": {
+        "id": "family_photo",
+        "normal_master": "art/raw/family_photo/normal_v1.png",
+        "raw_edit": "art/raw/family_photo/anomaly_v1.png",
+        "intended_delta": "one unfamiliar fifth adult standing behind the sofa between the parents",
+        "roi_norm": [
+          0.37,
+          0.03,
+          0.66,
+          0.48
+        ],
+        "composited": true,
+        "rejected_attempts": [],
+        "metrics": {
+          "id": "family_photo",
+          "align": {
+            "anomaly_size": [
+              1448,
+              1086
+            ],
+            "normal_size": [
+              1448,
+              1086
+            ],
+            "aspect_delta": 0.0,
+            "ecc_shift_px": [
+              -0.63,
+              -1.55
+            ],
+            "ecc_scale": [
+              1.0005,
+              1.0015
+            ]
+          },
+          "changed_total_frac": 0.0617,
+          "changed_inside_roi_frac": 0.4717,
+          "changed_outside_roi_frac": 0.0,
+          "largest_outside_component_frac": 0.0,
+          "outside_components": [],
+          "thresholds": {
+            "max_outside": 0.02,
+            "max_outside_component": 0.006,
+            "min_inside": 0.04
+          },
+          "raw_edit_pass": true,
+          "composited_outside_roi_frac": 0.0,
+          "composited_inside_roi_frac": 0.4717,
+          "composite_pass": true
+        },
+        "review_sheet": "art/qa/family_photo/review_sheet.jpg"
+      }
+    },
+    {
+      "key": "gallery_ceremony_normal",
+      "runtime_path": "public/assets/images/normal/ceremony_photo.jpg",
+      "role": "normal",
+      "source": "art/raw/ceremony_photo/normal_v1.png",
+      "prompt_file": "art/prompts/ceremony_photo_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 196133,
+      "sha256_16": "172e525f24c4203e",
+      "approved": true
+    },
+    {
+      "key": "gallery_ceremony_anomaly",
+      "runtime_path": "public/assets/images/anomaly/ceremony_photo_gaze.jpg",
+      "role": "anomaly",
+      "source": "art/qa/ceremony_gaze/anomaly_aligned.png",
+      "prompt_file": "art/prompts/ceremony_gaze_edit.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 178128,
+      "sha256_16": "6d3ae8433e1fdce5",
+      "approved": true,
+      "pair": {
+        "id": "ceremony_gaze",
+        "normal_master": "art/raw/ceremony_photo/normal_v1.png",
+        "raw_edit": "art/raw/ceremony_photo/anomaly_v1.png",
+        "intended_delta": "all attendees turn their heads to stare at the camera",
+        "roi_norm": [
+          0.0,
+          0.1,
+          1.0,
+          0.62
+        ],
+        "composited": false,
+        "rejected_attempts": [],
+        "metrics": {
+          "id": "ceremony_gaze",
+          "align": {
+            "anomaly_size": [
+              1448,
+              1086
+            ],
+            "normal_size": [
+              1448,
+              1086
+            ],
+            "aspect_delta": 0.0,
+            "ecc_shift_px": [
+              -0.05,
+              -0.23
+            ],
+            "ecc_scale": [
+              1.0,
+              0.9999
+            ]
+          },
+          "changed_total_frac": 0.021,
+          "changed_inside_roi_frac": 0.0404,
+          "changed_outside_roi_frac": 0.0,
+          "largest_outside_component_frac": 0.0,
+          "outside_components": [],
+          "thresholds": {
+            "max_outside": 0.05,
+            "max_outside_component": 0.02,
+            "min_inside": 0.01
+          },
+          "raw_edit_pass": true
+        },
+        "review_sheet": "art/qa/ceremony_gaze/review_sheet.jpg"
+      }
+    },
+    {
+      "key": "gallery_kimjang",
+      "runtime_path": "public/assets/images/normal/gallery_kimjang.jpg",
+      "role": "normal",
+      "source": "art/raw/gallery_kimjang/normal_v1.png",
+      "prompt_file": "art/prompts/gallery_kimjang_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 187482,
+      "sha256_16": "6d76f3dc4d291d3a",
+      "approved": true
+    },
+    {
+      "key": "gallery_rooftop",
+      "runtime_path": "public/assets/images/normal/gallery_rooftop.jpg",
+      "role": "normal",
+      "source": "art/raw/gallery_rooftop/normal_v1.png",
+      "prompt_file": "art/prompts/gallery_rooftop_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 203033,
+      "sha256_16": "444bd193d47a5e7e",
+      "approved": true
+    },
+    {
+      "key": "gallery_exterior",
+      "runtime_path": "public/assets/images/normal/gallery_exterior.jpg",
+      "role": "normal",
+      "source": "art/raw/gallery_exterior/normal_v1.png",
+      "prompt_file": "art/prompts/gallery_exterior_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 245329,
+      "sha256_16": "a7bfae960e2bfcd4",
+      "approved": true
+    },
+    {
+      "key": "res_leesoonja",
+      "runtime_path": "public/assets/images/residents/leesoonja.jpg",
+      "role": "normal",
+      "source": "art/raw/leesoonja/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_leesoonja_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 72509,
+      "sha256_16": "cd2532aed8eb97b6",
+      "approved": true
+    },
+    {
+      "key": "res_leesoonja_smile",
+      "runtime_path": "public/assets/images/anomaly/leesoonja_smile.jpg",
+      "role": "anomaly",
+      "source": "art/qa/leesoonja_smile/anomaly_composited.png",
+      "prompt_file": "art/prompts/portrait_leesoonja_smile_edit.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 72986,
+      "sha256_16": "31fe195a97b34de6",
+      "approved": true,
+      "pair": {
+        "id": "leesoonja_smile",
+        "normal_master": "art/raw/leesoonja/normal_v1.png",
+        "raw_edit": "art/raw/leesoonja/anomaly_v1.png",
+        "intended_delta": "mouth becomes an unnaturally wide smile; eyes unchanged",
+        "roi_norm": [
+          0.34,
+          0.5,
+          0.68,
+          0.66
+        ],
+        "composited": true,
+        "rejected_attempts": [],
+        "metrics": {
+          "id": "leesoonja_smile",
+          "align": {
+            "anomaly_size": [
+              1086,
+              1448
+            ],
+            "normal_size": [
+              1086,
+              1448
+            ],
+            "aspect_delta": 0.0,
+            "ecc_shift_px": [
+              -0.13,
+              -0.6
+            ],
+            "ecc_scale": [
+              0.9998,
+              0.9997
+            ]
+          },
+          "changed_total_frac": 0.0209,
+          "changed_inside_roi_frac": 0.3838,
+          "changed_outside_roi_frac": 0.0,
+          "largest_outside_component_frac": 0.0,
+          "outside_components": [],
+          "thresholds": {
+            "max_outside": 0.02,
+            "max_outside_component": 0.006,
+            "min_inside": 0.04
+          },
+          "raw_edit_pass": true,
+          "composited_outside_roi_frac": 0.0,
+          "composited_inside_roi_frac": 0.3763,
+          "composite_pass": true
+        },
+        "review_sheet": "art/qa/leesoonja_smile/review_sheet.jpg"
+      }
+    },
+    {
+      "key": "res_kimdohyun",
+      "runtime_path": "public/assets/images/residents/kimdohyun.jpg",
+      "role": "normal",
+      "source": "art/raw/kimdohyun/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_kimdohyun_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 51192,
+      "sha256_16": "71db1438252b32ca",
+      "approved": true
+    },
+    {
+      "key": "res_parkyoungsoo",
+      "runtime_path": "public/assets/images/residents/parkyoungsoo.jpg",
+      "role": "normal",
+      "source": "art/raw/parkyoungsoo/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_parkyoungsoo_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 67965,
+      "sha256_16": "0913fd0323bfa54d",
+      "approved": true
+    },
+    {
+      "key": "res_choiminyoung",
+      "runtime_path": "public/assets/images/residents/choiminyoung.jpg",
+      "role": "normal",
+      "source": "art/raw/choiminyoung/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_choiminyoung_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 47125,
+      "sha256_16": "4e3bb9723c518251",
+      "approved": true
+    },
+    {
+      "key": "res_ohjieun",
+      "runtime_path": "public/assets/images/residents/ohjieun.jpg",
+      "role": "normal",
+      "source": "art/raw/ohjieun/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_ohjieun_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 69113,
+      "sha256_16": "be0edb85e66360f4",
+      "approved": true
+    },
+    {
+      "key": "staff_hanseojin",
+      "runtime_path": "public/assets/images/residents/hanseojin.jpg",
+      "role": "normal",
+      "source": "art/raw/hanseojin/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_hanseojin_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 43838,
+      "sha256_16": "41739dcb9df63acf",
+      "approved": true
+    },
+    {
+      "key": "staff_parkjeongho",
+      "runtime_path": "public/assets/images/residents/parkjeongho.jpg",
+      "role": "normal",
+      "source": "art/raw/parkjeongho/normal_v1.png",
+      "prompt_file": "art/prompts/portrait_parkjeongho_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 53858,
+      "sha256_16": "5fd350c42c6aa565",
+      "approved": true
+    },
+    {
+      "key": "staff_parkjeongho_empty",
+      "runtime_path": "public/assets/images/anomaly/parkjeongho_empty.jpg",
+      "role": "anomaly",
+      "source": "art/qa/parkjeongho_empty/anomaly_aligned.png",
+      "prompt_file": "art/prompts/parkjeongho_empty_edit.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        600,
+        800
+      ],
+      "bytes": 10948,
+      "sha256_16": "7ee57e6df2d277e8",
+      "approved": true,
+      "pair": {
+        "id": "parkjeongho_empty",
+        "normal_master": "art/raw/parkjeongho/normal_v1.png",
+        "raw_edit": "art/raw/parkjeongho/anomaly_v1.png",
+        "intended_delta": "the person is removed; only the empty backdrop remains",
+        "roi_norm": [
+          0.0,
+          0.06,
+          1.0,
+          1.0
+        ],
+        "composited": false,
+        "rejected_attempts": [],
+        "metrics": {
+          "id": "parkjeongho_empty",
+          "align": {
+            "anomaly_size": [
+              1086,
+              1448
+            ],
+            "normal_size": [
+              1086,
+              1448
+            ],
+            "aspect_delta": 0.0,
+            "ecc_shift_px": [
+              787.36,
+              -2702.58
+            ],
+            "ecc_scale": [
+              0.1822,
+              4.765
+            ],
+            "ecc": "rejected_implausible_transform"
+          },
+          "changed_total_frac": 0.5326,
+          "changed_inside_roi_frac": 0.5665,
+          "changed_outside_roi_frac": 0.0,
+          "largest_outside_component_frac": 0.0,
+          "outside_components": [],
+          "thresholds": {
+            "max_outside": 0.03,
+            "max_outside_component": 0.01,
+            "min_inside": 0.2
+          },
+          "raw_edit_pass": true
+        },
+        "review_sheet": "art/qa/parkjeongho_empty/review_sheet.jpg"
+      }
+    },
+    {
+      "key": "ad_elevator_normal",
+      "runtime_path": "public/assets/images/posters/elevator_ad.jpg",
+      "role": "normal",
+      "source": "art/raw/elevator_ad/normal_v1.png",
+      "prompt_file": "art/prompts/elevator_ad_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        825,
+        1100
+      ],
+      "bytes": 200882,
+      "sha256_16": "506d116156432305",
+      "approved": true
+    },
+    {
+      "key": "ad_elevator_anomaly",
+      "runtime_path": "public/assets/images/anomaly/elevator_ad_rooftop.jpg",
+      "role": "anomaly",
+      "source": "art/qa/elevator_ad_rooftop/anomaly_composited.png",
+      "prompt_file": "art/prompts/elevator_ad_rooftop_edit_v2.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        825,
+        1100
+      ],
+      "bytes": 201003,
+      "sha256_16": "00af4a56c7284505",
+      "approved": true,
+      "pair": {
+        "id": "elevator_ad_rooftop",
+        "normal_master": "art/raw/elevator_ad/normal_v1.png",
+        "raw_edit": "art/raw/elevator_ad/anomaly_v2.png",
+        "intended_delta": "one small dark figure standing on the central tower roof edge",
+        "roi_norm": [
+          0.37,
+          0.2,
+          0.6,
+          0.31
+        ],
+        "composited": true,
+        "rejected_attempts": [
+          {
+            "file": "art/raw/elevator_ad/anomaly_v1.png",
+            "reason": "figure only a few pixels tall; unreadable at in-game poster size"
+          }
+        ],
+        "metrics": {
+          "id": "elevator_ad_rooftop",
+          "align": {
+            "anomaly_size": [
+              1086,
+              1448
+            ],
+            "normal_size": [
+              1086,
+              1448
+            ],
+            "aspect_delta": 0.0,
+            "ecc_shift_px": [
+              -0.05,
+              -0.18
+            ],
+            "ecc_scale": [
+              1.0,
+              1.0003
+            ]
+          },
+          "changed_total_frac": 0.0005,
+          "changed_inside_roi_frac": 0.0206,
+          "changed_outside_roi_frac": 0.0,
+          "largest_outside_component_frac": 0.0,
+          "outside_components": [],
+          "thresholds": {
+            "max_outside": 0.02,
+            "max_outside_component": 0.006,
+            "min_inside": 0.01
+          },
+          "raw_edit_pass": true,
+          "composited_outside_roi_frac": 0.0,
+          "composited_inside_roi_frac": 0.0206,
+          "composite_pass": true
+        },
+        "review_sheet": "art/qa/elevator_ad_rooftop/review_sheet.jpg"
+      }
+    },
+    {
+      "key": "archive_13f_construction",
+      "runtime_path": "public/assets/images/archive/construction_13f.jpg",
+      "role": "normal",
+      "source": "art/raw/archive_13f_construction/normal_v1.png",
+      "prompt_file": "art/prompts/archive_13f_construction_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 239441,
+      "sha256_16": "2d3f444cceecf599",
+      "approved": true
+    },
+    {
+      "key": "archive_1301_family",
+      "runtime_path": "public/assets/images/archive/family_1301.jpg",
+      "role": "normal",
+      "source": "art/raw/archive_1301_family/normal_v1.png",
+      "prompt_file": "art/prompts/archive_1301_family_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1280,
+        960
+      ],
+      "bytes": 134213,
+      "sha256_16": "35cb18ad666542cb",
+      "approved": true
+    },
+    {
+      "key": "keyart_title",
+      "runtime_path": "public/assets/images/keyart/title.jpg",
+      "role": "keyart",
+      "source": "art/raw/keyart_title/normal_v1.png",
+      "prompt_file": "art/prompts/keyart_title_normal.txt",
+      "generator": "Codex CLI 0.158.0 built-in image_gen tool (underlying model name not exposed by the CLI; unverified)",
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 140375,
+      "sha256_16": "ded2c17c8c17eb9a",
+      "approved": true
+    }
+  ]
+}

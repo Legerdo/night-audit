@@ -1,0 +1,36 @@
+{
+  "id": "leesoonja_smile",
+  "align": {
+    "anomaly_size": [
+      1086,
+      1448
+    ],
+    "normal_size": [
+      1086,
+      1448
+    ],
+    "aspect_delta": 0.0,
+    "ecc_shift_px": [
+      -0.13,
+      -0.6
+    ],
+    "ecc_scale": [
+      0.9998,
+      0.9997
+    ]
+  },
+  "changed_total_frac": 0.0209,
+  "changed_inside_roi_frac": 0.3838,
+  "changed_outside_roi_frac": 0.0,
+  "largest_outside_component_frac": 0.0,
+  "outside_components": [],
+  "thresholds": {
+    "max_outside": 0.02,
+    "max_outside_component": 0.006,
+    "min_inside": 0.04
+  },
+  "raw_edit_pass": true,
+  "composited_outside_roi_frac": 0.0,
+  "composited_inside_roi_frac": 0.3763,
+  "composite_pass": true
+}

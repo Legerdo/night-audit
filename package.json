@@ -1,0 +1,33 @@
+{
+  "name": "night-audit-13f",
+  "private": true,
+  "version": "1.0.0",
+  "description": "13층: 야간점검 (13F: Night Audit) — first-person anomaly-observation psychological horror",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest --run",
+    "e2e": "node tests/e2e/run-e2e.mjs",
+    "e2e:dev": "node tests/e2e/run-e2e.mjs --no-prod",
+    "e2e:prod": "node tests/e2e/prod-smoke.mjs",
+    "e2e:gallery": "node tests/e2e/anomaly-gallery.mjs",
+    "qa:zfight": "node tests/e2e/zfight-scan.mjs --anomalies",
+    "qa:images": "python tools/imageqa/pair_qa.py",
+    "assets:export": "python tools/imageqa/export_assets.py",
+    "docs:manifest": "node tools/gen-anomaly-manifest.mjs && python tools/imageqa/gen_prompts_doc.py"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "@types/three": "0.186.0",
+    "playwright-core": "1.63.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  }
+}

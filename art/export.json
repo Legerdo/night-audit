@@ -1,0 +1,26 @@
+{
+  "note": "Runtime export manifest. Only entries with approved=true are written to public/assets/images. Sources are raw normal masters (art/raw) or QA outputs (art/qa) for anomaly edits.",
+  "assets": [
+    { "key": "gallery_family_normal", "src": "art/raw/family_photo/normal_v1.png", "out": "normal/family_photo.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/family_photo_normal.txt", "approved": true },
+    { "key": "gallery_family_anomaly", "src": "art/qa/family_photo/anomaly_composited.png", "out": "anomaly/family_photo_extra_person.jpg", "max": 1280, "role": "anomaly", "pair": "family_photo", "prompt": "art/prompts/family_photo_anomaly_edit.txt", "approved": true },
+    { "key": "gallery_ceremony_normal", "src": "art/raw/ceremony_photo/normal_v1.png", "out": "normal/ceremony_photo.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/ceremony_photo_normal.txt", "approved": true },
+    { "key": "gallery_ceremony_anomaly", "src": "art/qa/ceremony_gaze/anomaly_aligned.png", "out": "anomaly/ceremony_photo_gaze.jpg", "max": 1280, "role": "anomaly", "pair": "ceremony_gaze", "prompt": "art/prompts/ceremony_gaze_edit.txt", "approved": true },
+    { "key": "gallery_kimjang", "src": "art/raw/gallery_kimjang/normal_v1.png", "out": "normal/gallery_kimjang.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/gallery_kimjang_normal.txt", "approved": true },
+    { "key": "gallery_rooftop", "src": "art/raw/gallery_rooftop/normal_v1.png", "out": "normal/gallery_rooftop.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/gallery_rooftop_normal.txt", "approved": true },
+    { "key": "gallery_exterior", "src": "art/raw/gallery_exterior/normal_v1.png", "out": "normal/gallery_exterior.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/gallery_exterior_normal.txt", "approved": true },
+    { "key": "res_leesoonja", "src": "art/raw/leesoonja/normal_v1.png", "out": "residents/leesoonja.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_leesoonja_normal.txt", "approved": true },
+    { "key": "res_leesoonja_smile", "src": "art/qa/leesoonja_smile/anomaly_composited.png", "out": "anomaly/leesoonja_smile.jpg", "max": 800, "role": "anomaly", "pair": "leesoonja_smile", "prompt": "art/prompts/portrait_leesoonja_smile_edit.txt", "approved": true },
+    { "key": "res_kimdohyun", "src": "art/raw/kimdohyun/normal_v1.png", "out": "residents/kimdohyun.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_kimdohyun_normal.txt", "approved": true },
+    { "key": "res_parkyoungsoo", "src": "art/raw/parkyoungsoo/normal_v1.png", "out": "residents/parkyoungsoo.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_parkyoungsoo_normal.txt", "approved": true },
+    { "key": "res_choiminyoung", "src": "art/raw/choiminyoung/normal_v1.png", "out": "residents/choiminyoung.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_choiminyoung_normal.txt", "approved": true },
+    { "key": "res_ohjieun", "src": "art/raw/ohjieun/normal_v1.png", "out": "residents/ohjieun.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_ohjieun_normal.txt", "approved": true },
+    { "key": "staff_hanseojin", "src": "art/raw/hanseojin/normal_v1.png", "out": "residents/hanseojin.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_hanseojin_normal.txt", "approved": true },
+    { "key": "staff_parkjeongho", "src": "art/raw/parkjeongho/normal_v1.png", "out": "residents/parkjeongho.jpg", "max": 800, "role": "normal", "prompt": "art/prompts/portrait_parkjeongho_normal.txt", "approved": true },
+    { "key": "staff_parkjeongho_empty", "src": "art/qa/parkjeongho_empty/anomaly_aligned.png", "out": "anomaly/parkjeongho_empty.jpg", "max": 800, "role": "anomaly", "pair": "parkjeongho_empty", "prompt": "art/prompts/parkjeongho_empty_edit.txt", "approved": true },
+    { "key": "ad_elevator_normal", "src": "art/raw/elevator_ad/normal_v1.png", "out": "posters/elevator_ad.jpg", "max": 1100, "role": "normal", "prompt": "art/prompts/elevator_ad_normal.txt", "approved": true },
+    { "key": "ad_elevator_anomaly", "src": "art/qa/elevator_ad_rooftop/anomaly_composited.png", "out": "anomaly/elevator_ad_rooftop.jpg", "max": 1100, "role": "anomaly", "pair": "elevator_ad_rooftop", "prompt": "art/prompts/elevator_ad_rooftop_edit_v2.txt", "approved": true },
+    { "key": "archive_13f_construction", "src": "art/raw/archive_13f_construction/normal_v1.png", "out": "archive/construction_13f.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/archive_13f_construction_normal.txt", "approved": true },
+    { "key": "archive_1301_family", "src": "art/raw/archive_1301_family/normal_v1.png", "out": "archive/family_1301.jpg", "max": 1280, "role": "normal", "prompt": "art/prompts/archive_1301_family_normal.txt", "approved": true },
+    { "key": "keyart_title", "src": "art/raw/keyart_title/normal_v1.png", "out": "keyart/title.jpg", "max": 1920, "role": "keyart", "prompt": "art/prompts/keyart_title_normal.txt", "approved": true }
+  ]
+}

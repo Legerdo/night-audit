@@ -1,0 +1,36 @@
+{
+  "id": "family_photo",
+  "align": {
+    "anomaly_size": [
+      1448,
+      1086
+    ],
+    "normal_size": [
+      1448,
+      1086
+    ],
+    "aspect_delta": 0.0,
+    "ecc_shift_px": [
+      -0.63,
+      -1.55
+    ],
+    "ecc_scale": [
+      1.0005,
+      1.0015
+    ]
+  },
+  "changed_total_frac": 0.0617,
+  "changed_inside_roi_frac": 0.4717,
+  "changed_outside_roi_frac": 0.0,
+  "largest_outside_component_frac": 0.0,
+  "outside_components": [],
+  "thresholds": {
+    "max_outside": 0.02,
+    "max_outside_component": 0.006,
+    "min_inside": 0.04
+  },
+  "raw_edit_pass": true,
+  "composited_outside_roi_frac": 0.0,
+  "composited_inside_roi_frac": 0.4717,
+  "composite_pass": true
+}

@@ -1,0 +1,9 @@
+{
+  "size": "1280x720",
+  "out": "tests/e2e/out/frames",
+  "steps": [
+    { "eval": "window.__game.screens.close(); window.__game.startNew('FRAMES'); window.__game.hud.show(false); 1", "wait": 600 },
+    { "eval": "(() => { const g = window.__game; g.player.teleport(4.2, 4*3.2, 0.7, 0.9, 0.08); return 1; })()", "wait": 900, "shot": "gallery_angle.png" },
+    { "eval": "(() => { const g = window.__game; g.player.teleport(9.5, 2*3.2, 0.3, -Math.PI / 2, 0.35); return 1; })()", "wait": 900, "shot": "stair_signs.png" }
+  ]
+}

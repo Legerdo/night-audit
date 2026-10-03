@@ -1,0 +1,52 @@
+{
+  "pairs": [
+    {
+      "id": "family_photo",
+      "normal": "art/raw/family_photo/normal_v1.png",
+      "anomaly": "art/raw/family_photo/anomaly_v1.png",
+      "roi": [0.37, 0.03, 0.66, 0.48],
+      "intended": "one unfamiliar fifth adult standing behind the sofa between the parents",
+      "composite": true
+    },
+    {
+      "id": "leesoonja_smile",
+      "normal": "art/raw/leesoonja/normal_v1.png",
+      "anomaly": "art/raw/leesoonja/anomaly_v1.png",
+      "roi": [0.34, 0.5, 0.68, 0.66],
+      "intended": "mouth becomes an unnaturally wide smile; eyes unchanged",
+      "composite": true,
+      "feather": 0.02
+    },
+    {
+      "id": "elevator_ad_rooftop",
+      "normal": "art/raw/elevator_ad/normal_v1.png",
+      "anomaly": "art/raw/elevator_ad/anomaly_v2.png",
+      "rejected": [{ "file": "art/raw/elevator_ad/anomaly_v1.png", "reason": "figure only a few pixels tall; unreadable at in-game poster size" }],
+      "roi": [0.37, 0.2, 0.6, 0.31],
+      "intended": "one small dark figure standing on the central tower roof edge",
+      "composite": true,
+      "feather": 0.015,
+      "min_component": 0.0002,
+      "thresholds": { "min_inside": 0.01 }
+    },
+    {
+      "id": "ceremony_gaze",
+      "normal": "art/raw/ceremony_photo/normal_v1.png",
+      "anomaly": "art/raw/ceremony_photo/anomaly_v1.png",
+      "roi": [0.0, 0.1, 1.0, 0.62],
+      "intended": "all attendees turn their heads to stare at the camera",
+      "composite": false,
+      "thresholds": { "max_outside": 0.05, "max_outside_component": 0.02, "min_inside": 0.01 }
+    },
+    {
+      "id": "parkjeongho_empty",
+      "normal": "art/raw/parkjeongho/normal_v1.png",
+      "anomaly": "art/raw/parkjeongho/anomaly_v1.png",
+      "roi": [0.0, 0.06, 1.0, 1.0],
+      "roi_note": "the shoulders reach both image edges, so the removal legitimately spans the full width; only the top strip is backdrop-only",
+      "intended": "the person is removed; only the empty backdrop remains",
+      "composite": false,
+      "thresholds": { "max_outside": 0.03, "max_outside_component": 0.01, "min_inside": 0.2 }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "size": "1366x768",
+  "steps": [
+    { "click": ".menu button:nth-child(1)", "wait": 400 },
+    { "shot": "brief_1366.png" },
+    { "click": ".btn.primary", "wait": 900 },
+    { "eval": "__na13f.pos(-11.0, 0, -3.4, 1.5708); 1", "wait": 500, "shot": "binder_focus.png" },
+    { "key": "e", "wait": 400 },
+    { "eval": "({binder: __na13f.s.pickedUp})" },
+    { "eval": "__na13f.skip(); __na13f.pos(-1.2, 0, 0.6, -1.9); 1", "wait": 600 },
+    { "key": "Tab", "wait": 500 },
+    { "click": ".judge button.anomaly", "wait": 200 },
+    { "click": ".cats button:nth-child(1)", "wait": 200, "shot": "report_form_1366.png" },
+    { "click": ".submit-row .btn.primary", "wait": 800, "shot": "report_result_1366.png" },
+    { "eval": "({reports: __na13f.s.reports, c: __na13f.s.contamination, vend2: !!__game.world.floors.get(1).named.get('vending2')})" },
+    { "key": "Tab", "wait": 500, "shot": "after_report.png" }
+  ]
+}

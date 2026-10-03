@@ -1,0 +1,15 @@
+{
+  "size": "1280x720",
+  "steps": [
+    { "eval": "window.__game.startNew('PROBE1')", "wait": 600 },
+    { "eval": "__na13f.pos(10.5, 3*3.2-3.2+0, 0.2, 1.57)", "wait": 800, "shot": "tour_3f.png" },
+    { "eval": "__na13f.pos(6.5, 4*3.2, 0.3, 1.57)", "wait": 800, "shot": "tour_5f_gallery.png" },
+    { "eval": "__na13f.pos(2.8, 4*3.2, 0.2, 0)", "wait": 600, "shot": "tour_5f_family.png" },
+    { "eval": "__na13f.pos(0.3, 0, -3.9, 3.14)", "wait": 800, "shot": "tour_car.png" },
+    { "eval": "__na13f.pos(0.3, 0, -4.2, 0)", "wait": 800, "shot": "tour_car_mirror.png" },
+    { "eval": "__na13f.pos(12.8, 2*3.2, 1.0, -1.57, 0.2)", "wait": 800, "shot": "tour_stair.png" },
+    { "eval": "__na13f.pos(-1, -3.2, 0.3, 1.57)", "wait": 800, "shot": "tour_b1.png" },
+    { "eval": "__na13f.pos(10, 3.2, 0.2, 1.57)", "wait": 800, "shot": "tour_2f.png" },
+    { "eval": "__na13f.pos(9.0, 11*3.2, -3.6, 3.14)", "wait": 800, "shot": "tour_1204.png" }
+  ]
+}
